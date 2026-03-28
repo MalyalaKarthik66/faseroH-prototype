@@ -28,16 +28,19 @@ faseroH-prototype/
 ├── configs/               # YAML experiment configuration files
 │   ├── transformer.yaml
 │   ├── lstm.yaml
-│   └── large_dataset.yaml
+│   └── transformer_5epochs.yaml
 ├── data/                  # Dataset generation, validation, dataloaders
 │   ├── generate_expression_trees.py
 │   ├── generate_taylor_dataset.py
+│   ├── histogram_sim.py
 │   └── validate_dataset.py
 ├── tokenizer/             # Prefix conversion, vocabulary, tokenizer
 │   ├── prefix_converter.py
 │   ├── tokenizer.py
 │   └── vocabulary.py
 ├── models/                # LSTM and Transformer seq2seq implementations
+│   ├── encoders/
+│   ├── decoders/
 │   ├── lstm_seq2seq.py
 │   └── transformer_seq2seq.py
 ├── training/              # Training entrypoint and trainer logic
@@ -48,13 +51,20 @@ faseroH-prototype/
 │   ├── semantic_metrics.py
 │   ├── coefficient_metrics.py
 │   ├── run_evaluation.py
+│   ├── error_analysis.py
 │   └── error_report.py
 ├── experiments/           # Model comparison and qualitative analysis
 │   ├── run_experiment.py
 │   ├── compare_models.py
+│   ├── inference.py
 │   └── generate_examples.py
+├── notebooks/             # Analysis and visualization notebooks
+│   ├── dataset_analysis.ipynb
+│   └── results_analysis.ipynb
+├── tests/                 # Pytest coverage for core components
 ├── results/               # Checkpoints, metrics, predictions, reports
 ├── demo.py                # CLI inference tool
+├── setup.py
 └── requirements.txt
 ```
 
