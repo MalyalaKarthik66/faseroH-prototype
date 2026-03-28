@@ -223,7 +223,7 @@ Loads the trained checkpoint and vocabulary, runs greedy or beam decoding (per c
 | LSTM + Attention | 0.8175 | 0.6865 | 0.720 | 1.543 | 0.773 | 12879.56 |
 | Transformer | 0.4224 | 0.0515 | 0.186 | 4.912 | 0.055 | 46537.52 |
 
-The LSTM model achieves strong performance across all metrics. The Transformer underperforms at this dataset scale, which is expected — Transformer architectures are data-hungry and benefit significantly from larger datasets. Both models are currently being retrained on a 50,000-sample dataset.
+The LSTM model (trained for 40 epochs) achieves strong performance across all metrics. The Transformer model (trained for 30 epochs) shows lower performance at this dataset scale, which is expected, as Transformer architectures typically require larger datasets to effectively capture structured symbolic relationships.
 
 ---
 
