@@ -1,0 +1,33 @@
+seed: 42
+model: lstm
+device: auto
+dataset:
+  path: data/taylor_dataset.csv
+  size: 50000
+  max_order: 4
+  train_split: 0.8
+  val_split: 0.1
+  test_split: 0.1
+  max_input_len: 80
+  max_target_len: 120
+  num_buckets: 8
+training:
+  epochs: 45
+  batch_size: 32
+  learning_rate: 0.0005
+  weight_decay: 0.0001
+  grad_clip: 1.0
+  early_stopping_patience: 8
+  teacher_forcing_start: 1.0
+  teacher_forcing_end: 0.3
+  scheduled_sampling: true
+  log_every: 100
+  beam_width: 1
+  length_penalty: 0.6
+  use_amp: true
+model_params:
+  embedding_dim: 256
+  hidden_dim: 256
+  num_layers: 2
+  dropout: 0.2
+  bidirectional: true

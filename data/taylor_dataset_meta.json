@@ -1,0 +1,10 @@
+{
+  "size": 50000,
+  "max_order": 4,
+  "seed": 42,
+  "split_counts": {
+    "train": 40000,
+    "val": 5000,
+    "test": 5000
+  }
+}

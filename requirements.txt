@@ -1,0 +1,10 @@
+torch
+numpy
+sympy
+pandas
+scikit-learn
+matplotlib
+tqdm
+pyyaml
+tensorboard
+pytest

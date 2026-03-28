@@ -1,0 +1,19 @@
+name: faseroH-prototype
+channels:
+  - pytorch
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pytorch
+  - numpy
+  - sympy
+  - pandas
+  - scikit-learn
+  - matplotlib
+  - tqdm
+  - pyyaml
+  - tensorboard
+  - pytest
+  - pip
+  - pip:
+      - -r requirements.txt
